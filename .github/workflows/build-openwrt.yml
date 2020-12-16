@@ -40,7 +40,7 @@ env:
   REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
   SCKEY: ${{ secrets.SCKEY }}
   TZ: Asia/Shanghai
-  GITHUB_RELEASE: https://github.com/281677160/build-openwrt/releases
+  GITHUB_RELEASE: https://github.com/xiaobailong6/Auto-OpenwrtNO9/releases
 
 jobs: 
   build:
@@ -277,11 +277,11 @@ jobs:
             
             🎉 [ ${{ env.WXFB_MESSAGE }} ]固件下载 ✨
             
-            💐 奶牛快传(国内高速🚀下载)： ${{ env.COWTRANSFER_URL }}
+         #   💐 奶牛快传(国内高速🚀下载)： ${{ env.COWTRANSFER_URL }}
             
-            ⛄ WeTransfer(国外高速🚀下载)： ${{ env.WETRANSFER_URL }}
+         #   ⛄ WeTransfer(国外高速🚀下载)： ${{ env.WETRANSFER_URL }}
             
-            🌴 链接有效期为7天，无需注册直接下载 🐤
+         #   🌴 链接有效期为7天，无需注册直接下载 🐤
         files: ${{ env.FIRMWARE }}/*
     
     - name: 微信通知
